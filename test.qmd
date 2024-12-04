@@ -10,4 +10,9 @@ library(tidyverse)
 
 ```{r}
 # code team num 2
+# Rachel
+starwars %>%  
+    filter(species == 'Human') %>% 
+    ggplot(aes(x=height, y=mass)) +
+    geom_point() 
 ```
