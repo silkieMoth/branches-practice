@@ -16,10 +16,11 @@ starwars %>% filter(species == 'Human') %>%
 ```
 
 ```{r}
-# code team num 3
+starwars %>% filter(species == 'Human') %>%
+    ggplot(aes(x = height, y = mass)) +
+    geom_point()
 ```
 
 ```{r}
 # code team num 4
 ```
-
