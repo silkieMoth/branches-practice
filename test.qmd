@@ -5,14 +5,13 @@ library(tidyverse)
 ```
 
 ```{r}
-# code team num 1
+starwars %>% filter(species == 'Human') %>% 
+    ggplot(aes(x = height, y=mass)) + 
+    geom_point()
 ```
 
 ```{r}
 # code team num 2
-starwars %>% filter(species == 'Human') %>%
-    ggplot(aes(x=height, y=mass)) +
-    geom_point()
 ```
 
 ```{r}
